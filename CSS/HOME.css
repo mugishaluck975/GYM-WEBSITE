@@ -17,7 +17,8 @@
   }
   body,html{
   overflow-x:hidden;
-  background-image: url(../PICS/pexels-matheus-bertelli-799443.jpg);
+  /* background-image: url(../PICS/gym4.png); */
+  background-color: #f5f5f5;
   background-repeat: no-repeat;
   background-size: cover;
   }
@@ -26,8 +27,9 @@
 header{
 width:100vw;
 height:100vh;
-background-image: url(../PICS/pexels-arthouse-studio-4320782.jpg);
+background: linear-gradient(rgba(17, 178, 199, 0.2), rgba(17, 199, 190, 0.2)), url(../PICS/gym3.png);
 background-size: cover;
+background-repeat: none;
 display:flex;
 align-items: flex-end;
 justify-content: center;
@@ -39,13 +41,13 @@ text-align:center;
 letter-spacing: 5px;
 }
 .header-content h2 {
-
-font-size: 15vm;
+font-size: 30px;
+color: rgb(24, 21, 17);
 }
 .line{
 width: 170px;
 height:4px;
-background-color: #910404;
+background-color: #823401;
 margin:20px auto;
 border-radius:5px;
 }
@@ -58,14 +60,15 @@ color:#07fa079f;
 
 .ctn{
 padding: 8px 45px;
-background-color: #910404;
+background-color: #823401;
+border: none;
 border-radius: 5px;
 color:#fff;
 text-transform: uppercase;
 letter-spacing: 5px;
 }
 .ctn:hover{
-background-color: #78c978;
+/* background-color: #78c978; */
 color:#fdfbfb;
 box-shadow: 1px 1px 4px #000;
 }
@@ -88,23 +91,31 @@ width: 100%;
 justify-content: space-between;
 padding: 20px;
 color:#fff;
-background-color: #910404;
+background-color: #823401;
 }
 .nav-links{
 display: flex;
 align-items: center;
 }
 .nav-links li{
-margin:0px 30px;
-text-decoration: none;
+/* margin:0px 30px; */
+padding:0px 20px;
+/* text-decoration: none; */
+list-style: none;
 text-transform: uppercase;
 letter-spacing: 4px;
+font-size: 15px;
 }
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .nav-links li a:hover{
 color:#77f577de;
 }
 .logo{
-letter-spacing: 8px;
+letter-spacing: 4px;
 font-size: 5vmin;
 }
 .logo span{
@@ -112,60 +123,50 @@ color: #0ab404;
 }
 
 /*about*/
-.slideshow-container{
-max-width: 800px;
+.container{
+/* max-width: 800px; */
+min-height: 87vh;
 position: relative;
 margin: auto;
 }
 
-.slide{
-display: none;
-}
-
-.slide img{
-width: 100%;
-height: auto;
-}
-.fade{
-animation-name:fade ;
-animation-duration: 3s;
-}
-@keyframes fade{
-0%{
-opacity: 0.4;
-}
-25%{
-opacity: 0.6;
-}
-50%{
-opacity: 0.8;
-}
-75%{
-opacity: 1;
-}
-100%{
-opacity: 1;
-}
-}
 .about{
 color: rgb(255, 255, 255);
 width: 60%;
 height: 400px;
-background-color: #910404;
+background-color: #823401;
 display: flex;
 flex-direction: row;
 margin: 20px auto;
 }
-.pic{
-width: 50%;  
-}
+
 img{
 height: 100%;
 }
+
 .topic{
-display:inline-block;
-margin: 30px ;
-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 12rem;
+}
+
+.topic .info {
+  margin:1rem;
+}
+
+.summary {
+  padding: 0 6rem;
+  line-height: 30px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.info-content{
+padding: 12px 0;
 }
 
 /*cards*/
@@ -179,35 +180,38 @@ main{
 
 aside{
   width: 27%;
-  height: 400px;
+  height: auto;
   color:#fff;
   margin: 2px auto;
 }
 
 section{
   width: 27%;
-  height: 400px;
+  height: auto;
   margin: 2px auto;
 }
 
 
 .card{
-  box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
-  transition: 0.3s;
+  /* box-shadow: 0 4px 8px 0 rgb(59, 59, 59); */
+  /* transition: 0.3s; */
   width: 100%;
-  height: 90%;
-  background: #3b3b3b;
+  /* height: 90%; */
+  /* background: #3b3b3b; */
   height: 400px;
+  background-color:#f5f5f5;
+  padding:50px 10% 35px;
+  border: 1px solid #c3c3cc;
 }
 
-.container1{
-  color: rgb(241, 240, 216);
-  background: #3b3b3b;
+.card-detail{
+  color:#080b10;
 }
 
 
 .card:hover{
-  box-shadow: 0 8px 16px 0 rgb(24, 24, 24);
+  box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
+  transition: 0.3s;
 }
 
 
@@ -217,22 +221,24 @@ section{
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 2px auto;
   cursor: pointer;
-  background-color: #910404;
+  background-color: #823401;
+  border-radius: 5px
 }
 
+.button a {
+  text-decoration: none;
+  color: white;
+}
 footer{
 position: relative;
-margin: 140px auto;
-background-color: #910404;
+margin: 140px 0 0;
+background-color: #823401;
 color: #d7d7df;
 align-items: center;
 text-align: center;
 }
-
 
 
 
