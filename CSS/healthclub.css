@@ -1,0 +1,160 @@
+/* WE ARE RMOVING THE DEFAULT SETTINGS */
+/*fonts*/
+@font-face{
+font-family: oswald;
+src:url(../fonts/Oswald-Bold.ttf);
+}
+
+
+/*html,body*/
+*{
+margin:0;
+padding:0;
+font-family: Oswald, Arial, sans-serif;
+box-sizing: border-box;
+}
+body,html{
+overflow-x:hidden;
+}
+
+
+/* HEADER SECTION */
+header{
+width:80%;
+height:300px;
+margin: 100px auto;
+align-items: center;
+text-align: center;
+}
+
+
+.menu-btn{
+position: absolute;
+top: 30px;
+right: 30px;
+width: 40px;
+cursor: pointer;
+display: none;
+}
+    
+/* NAVIGATION CSS SECTION */
+.navbar{
+  position: absolute;
+  top: 0;
+  left:0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color:#fff;
+  background-color: #910404;
+  }
+  .nav-links{
+  display: flex;
+  align-items: center;
+  }
+  .nav-links li{
+  margin:0px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  }
+  .nav-links li a:hover{
+  color:#77f577de;
+  }
+  .logo{
+  letter-spacing: 8px;
+  font-size: 5vmin;
+  }
+  .logo span{
+  color: #0ab404;
+  }
+    
+/*about*/
+.about{
+color: rgb(255, 255, 255);
+width: 60%;
+height: 400px;
+background-color: #910404;
+display: flex;
+flex-direction: row;
+margin: 20px auto;
+}
+.pic{
+width: 50%;  
+}
+img{
+height: 100%;
+}
+.topic{
+display:inline-block;
+margin: 30px ;
+width: 50%;
+}
+
+/*cards*/
+main{
+width: 81%;
+height: 400px;
+display: flex;
+flex-direction: row;
+margin: 20px auto;
+}
+
+aside{
+width: 27%;
+height: 400px;
+color:#fff;
+margin: 2px auto;
+}
+
+section{
+width: 27%;
+height: 400px;
+margin: 2px auto;
+}
+
+
+.card{
+box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
+transition: 0.3s;
+width: 100%;
+height: 90%;
+background: #3b3b3b;
+height: 400px;
+text-align: center;
+}
+
+.container1{
+color: rgb(241, 240, 216);
+background: #3b3b3b;
+}
+
+
+.card:hover{
+box-shadow: 0 8px 16px 0 rgb(24, 24, 24);
+}
+
+
+.button{
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 2px auto;
+cursor: pointer;
+background-color: #910404;
+}
+  
+footer{
+  position: relative;
+  margin: 140px auto;
+  background-color: #910404;
+  color: #d7d7df;
+  align-items: center;
+  text-align: center;
+}
+  

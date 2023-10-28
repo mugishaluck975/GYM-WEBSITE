@@ -1,0 +1,244 @@
+/* WE ARE RMOVING THE DEFAULT SETTINGS */
+/*fonts*/
+@font-face{
+  font-family: oswald;
+  src:url(../fonts/Oswald-Bold.ttf);
+  }
+  
+  
+  /*html,body*/
+  *{
+  margin:0;
+  padding:0;
+  font-family: Oswald, Arial, sans-serif;
+  box-sizing: border-box;
+ 
+  backface-visibility:initial;
+  }
+  body,html{
+  overflow-x:hidden;
+  background-image: url(../PICS/pexels-matheus-bertelli-799443.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+/* HEADER SECTION */
+header{
+width:100vw;
+height:100vh;
+background-image: url(../PICS/pexels-arthouse-studio-4320782.jpg);
+background-size: cover;
+display:flex;
+align-items: flex-end;
+justify-content: center;
+}
+.header-content{
+margin-bottom: 150px;
+color:#f7f6fa;
+text-align:center;
+letter-spacing: 5px;
+}
+.header-content h2 {
+
+font-size: 15vm;
+}
+.line{
+width: 170px;
+height:4px;
+background-color: #910404;
+margin:20px auto;
+border-radius:5px;
+}
+.header-content h1{
+font-size: 7vmin;
+margin-top: 30px;
+margin-bottom: 30px;
+color:#07fa079f;
+}
+
+.ctn{
+padding: 8px 45px;
+background-color: #910404;
+border-radius: 5px;
+color:#fff;
+text-transform: uppercase;
+letter-spacing: 5px;
+}
+.ctn:hover{
+background-color: #78c978;
+color:#fdfbfb;
+box-shadow: 1px 1px 4px #000;
+}
+.menu-btn{
+position: absolute;
+top: 30px;
+right: 30px;
+width: 40px;
+cursor: pointer;
+display: none;
+}
+
+/* NAVIGATION CSS SECTION */
+.navbar{
+position: absolute;
+top: 0;
+left:0;
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 20px;
+color:#fff;
+background-color: #910404;
+}
+.nav-links{
+display: flex;
+align-items: center;
+}
+.nav-links li{
+margin:0px 30px;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 4px;
+}
+.nav-links li a:hover{
+color:#77f577de;
+}
+.logo{
+letter-spacing: 8px;
+font-size: 5vmin;
+}
+.logo span{
+color: #0ab404;
+}
+
+/*about*/
+.slideshow-container{
+max-width: 800px;
+position: relative;
+margin: auto;
+}
+
+.slide{
+display: none;
+}
+
+.slide img{
+width: 100%;
+height: auto;
+}
+.fade{
+animation-name:fade ;
+animation-duration: 3s;
+}
+@keyframes fade{
+0%{
+opacity: 0.4;
+}
+25%{
+opacity: 0.6;
+}
+50%{
+opacity: 0.8;
+}
+75%{
+opacity: 1;
+}
+100%{
+opacity: 1;
+}
+}
+.about{
+color: rgb(255, 255, 255);
+width: 60%;
+height: 400px;
+background-color: #910404;
+display: flex;
+flex-direction: row;
+margin: 20px auto;
+}
+.pic{
+width: 50%;  
+}
+img{
+height: 100%;
+}
+.topic{
+display:inline-block;
+margin: 30px ;
+width: 50%;
+}
+
+/*cards*/
+main{
+  width: 81%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+aside{
+  width: 27%;
+  height: 400px;
+  color:#fff;
+  margin: 2px auto;
+}
+
+section{
+  width: 27%;
+  height: 400px;
+  margin: 2px auto;
+}
+
+
+.card{
+  box-shadow: 0 4px 8px 0 rgb(59, 59, 59);
+  transition: 0.3s;
+  width: 100%;
+  height: 90%;
+  background: #3b3b3b;
+  height: 400px;
+}
+
+.container1{
+  color: rgb(241, 240, 216);
+  background: #3b3b3b;
+}
+
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgb(24, 24, 24);
+}
+
+
+.button{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px auto;
+  cursor: pointer;
+  background-color: #910404;
+}
+
+footer{
+position: relative;
+margin: 140px auto;
+background-color: #910404;
+color: #d7d7df;
+align-items: center;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
